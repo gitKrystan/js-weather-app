@@ -12,7 +12,7 @@
     "gulp-util": "^3.0.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha spec"
   },
   "author": "",
   "license": "ISC"

@@ -114,10 +114,9 @@ gulp.task('testServe', function() {
     }
   });
 
-  gulp.watch(['js/*.js'], ['jsBuild']);
-  gulp.watch(['spec/specs.js', 'spec/spec-runner.html'], ['specBuild']);
+  gulp.watch(['js/*.js', 'spec/specs.js', 'spec/spec-runner.html'], ['specBuild']);
 });
 
-gulp.task('specBuild', function() {
+gulp.task('specBuild', ['jsBrowserify', 'jshint'], function() {
   browserSyncTestServe.reload();
 });
