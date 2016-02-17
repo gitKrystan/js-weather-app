@@ -7,22 +7,33 @@
   </head>
   <body>
     <div class="container">
-      <h1>Get Weather Just About Anywhere!</h1>
-      <label for="location">Enter a location:</label>
-      <input id="location" type="text">
-      <button class="btn-success" id="weatherLocation">Get Current Weather!</button>
-      <label class="radio-inline">
-        <input type="radio" name="temperatureDisplayOptions" value="fahrenheit"> Fahrenheit
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="temperatureDisplayOptions" value="celsius"> Celsius
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="temperatureDisplayOptions" value="kelvin"> Kelvin
-      </label>
-      <div id="showWeather"  class="collapse">
-        <p>The humidity in <span id="chosenCity"></span> is  <span id="humidity"></span>%</p>
-        <p>The temperature is <span id='temperatureDisplay'></span>&deg;<span id="temperatureType"></span></p>
+      <h1>Good Morning Anywhere!</h1>
+      <div class="row">
+        <label for="location">Where are you this morning?</label>
+        <input id="location" type="text">
+        <button class="btn-success" id="weatherLocation">Get Current Weather!</button>
+        <label class="radio-inline">
+          <input type="radio" name="temperatureDisplayOptions" value="fahrenheit"> Fahrenheit
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="temperatureDisplayOptions" value="celsius"> Celsius
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="temperatureDisplayOptions" value="kelvin"> Kelvin
+        </label>
+        <div id="showWeather"  class="collapse">
+          <p>The humidity in <span id="chosenCity"></span> is  <span id="humidity"></span>%</p>
+          <p>The temperature is <span id='temperatureDisplay'></span>&deg;<span id="temperatureType"></span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          The time is <span id="time"></span>.
+        </p>
+        <p>
+          You have <span id="daysLeft"></span> to prepare for Justin Timberlake's birthday.
+        </p>
       </div>
     </div>
     <script src="build/js/vendor.min.js"></script>
