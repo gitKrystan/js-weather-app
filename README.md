@@ -6,6 +6,8 @@
 
 This weather app shows the current weather in a given location using the Open Weather Map API. It also shows a countdown to Justin Timberlake's next birthday (using Moment.js).
 
+Testing with Mocha/Chai.
+
 ## Setup
 
 Install by cloning this repository.
